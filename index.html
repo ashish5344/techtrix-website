@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techtrix</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        /* padding-right: 3px; */
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .pc-no{
+        display: inline;
+        background-color: black;
+        margin:auto;
+        line-height: 90px;
+        color: #ffffff;
+        padding: 10px 16px;
+        border-radius: 25px;
+        vertical-align: middle;
+      }
+      .process{
+        width: 295px;
+        height: 240px;
+        text-align: center;
+        margin: 5px;
+      }
+      .txt-clr-t {
+        color: rgb(255, 63, 29);
+      }
+      .txt-clr-w {
+        color: white;
+      }
+      .bg-color-t {
+        background-color: rgb(252, 79, 26);
+      }
+      .dis-flex {
+        display: flex;
+        flex-direction: row;
+      }
+      .dis-inline {
+        display: inline;
+      }
+      .dis-inline-block {
+        display: inline-block;
+      }
+      .dis-block {
+        display: block;
+      }
+      .fsize-3 {
+        font-size: 3.5rem;
+      }
+
+      .txt-clr-g {
+        color: rgb(107, 107, 107);
+      }
+      .txt-clr-b {
+        color:black;
+      }
+      header::before {
+        content: "";
+        position: absolute;
+        height: 130vh;
+        width: 98.7vw;
+        background-image: url(images/background-2.jpg);
+        background-repeat: no-repeat;
+        z-index: -1;
+        opacity: 100%;
+      }
+      
+      a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+      }
+      #navbar {
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: 15px;
+      }
+      
+      #techtrix {
+        width: 189px;
+        background-color: #ffffff;
+        border-radius: 3px;
+        padding: 20px 17px;
+        margin-left: 10px;
+      }
+      #techtrick-2 {
+        width: 189px;
+        border-radius: 3px;
+        padding: 20px 17px;
+        margin-left: 10px;
+      }
+      
+      .tabs ul {
+        display: flex;
+        list-style: none;
+      }
+
+      .tabs li {
+        margin: 4px;
+      }
+      
+      .tabs ul li a {
+        font-size: 15px;
+      }
+      .tabs {
+        margin: auto;
+        left: 230px;
+      }
+      
+      #call-num {
+        display: block;
+        font-weight: bolder;
+        font-size: 18px;
+      }
+      
+      .button {
+        background-color: rgb(255, 63, 29);
+        transition: all 0.7s;
+        display: inline-block;
+        padding: 20px 45px;
+        margin: 0px 35px;
+        border-radius: 5px;
+      }
+      /* #read{
+        height: 23px;
+      } */
+      .button-2 {
+        background-color:black;
+        display: inline-block;
+        padding: 20px 45px;
+        margin: 30px 35px;
+        border-radius: 5px;
+      }
+      .button a {
+        text-decoration: none;
+        transition: all 0.7s;
+      }
+      .button a {
+        color: #ffffff;
+        font-size: 20px;
+      }
+      .button:hover {
+        background-color: black;
+      }
+      .arrow {
+        opacity: 0%;
+      }
+      #cont-icon {
+        height: 40px;
+        width: 40px;
+        margin: -16px 10px;
+      }
+      #arrow {
+        background-color: transparent;
+        border: none;
+        color: rgb(146, 146, 146);
+        font-size: 12px;
+      }
+      #banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .heading {
+        font-weight: 600;
+      }
+      .read-and-contact {
+        border: none;
+        height: 40px;
+        width: 130px;
+        padding: 17px;
+        margin: 25px;
+        padding-top: 10px;
+      }
+      #btn-1:hover {
+        background-color: rgb(255, 255, 255);
+        cursor: pointer;
+      }
+      #btn-2:hover {
+        background-color: tomato;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+      }
+      .container {
+        display: flex;
+        margin-top: 200px;
+        padding-left: 34px;
+      }
+      .explore {
+        margin: 70px;
+        width: 300px;
+      }
+      .options{
+        margin: 15px;
+        width: 300px;
+        width: 280px;
+      }
+      .margin-40 {
+        margin: 40px 0px;
+      }
+      #read {
+        transition: all 2s;
+      }
+      #read:hover {
+        text-decoration: underline;
+      }
+      .second-box {
+        background-color: black;
+        color: white;
+        padding-left: 50px;
+        margin-right: 34px;
+        width: 370px;
+        height: 540px;
+      }
+      .list-item {
+        padding: 15px 0px;
+      }
+      .bottom {
+        display: flex;
+        height: 90px;
+        width: 500px;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 1440px;
+        right: 13px;
+        font-size: 25px;
+        font-weight: bold;
+      }
+      #image-2 {
+        position: relative;
+        left: 260px;
+        bottom: 175px;
+        border: 10px solid white;
+        border-radius: 5px;
+      }
+      .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 260px;
+        height: 130px;
+        border-radius: 3px;
+        position: relative;
+        bottom: 335px;
+      }
+      .text-hover:hover{
+        color: #fa4646;
+      }
+      .third-part{
+        background-color: black;
+        margin: -34px;
+        padding:100px 20px;
+        flex-direction: column;
+        justify-content: center;
+        width: 1298px;
+      }
+      .icon{
+        background-color: white;
+        height: 220px;
+        width: 250px;
+        margin: 15px;
+        padding: 50px;
+        border-radius: 6px;
+        line-height: 30px;
+      }
+      .fourth-part{
+        display: flex;
+        background-color: #fc4423;
+        color: white;
+        margin: -34px;
+        padding: 150px 40px;
+        padding-bottom: 6px;
+        width: 1269px;
+      }
+      .text-2{
+        margin: -34px;
+        padding: 150px 40px;
+        width: 590px;
+      }
+      .items{
+        display: grid;
+        margin: 50px 0px;
+        grid-template-columns: 1fr 1fr;
+      }
+      .list-items{
+        line-height: 30px;
+      }
+      .image-2{
+        position: relative;
+        left: 47px;
+        bottom: 150px;
+        height: 119%;
+        width:100%;
+        border-radius: 5px;
+      }
+      .fifth-part{
+        padding: 190px 0px;
+        width: 1298px;
+      }
+      .sixth-part{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        width: 1298px;
+      }
+      .team-members{
+        margin: 13px;
+      }
+
+
+      /* Our Team Members */
+      .images{  
+        display: flex;
+        justify-content: space-around;
+      }
+      .seventh-part{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        margin: 250px 0px;
+        margin-bottom: 25px;
+      }
+
+
+
+      .footer{
+        display: flex;
+        background-color: rgb(33, 37,41);
+        color: rgb(211, 211, 211);
+      }
+      .rows{
+        margin: 120px 24px;
+        width: 290px;
+        /* line-height: 45px; */
+      }
+      .rows ul li::marker{
+        color: rgb(253, 81, 50);
+      }
+      .footer-li{
+        color:rgb(211,211,211);
+        margin: 25px 0px;
+      }
+      .footer-bottom{
+        display: flex;
+        background-color: black;
+        color: white;
+      }
+      .footer-bottom ul{
+        display: flex;
+        list-style: none;
+      }
+      .footer-bottom ul li{
+        padding:15px 25px;
+      }
+      .rows li{
+        transition: 0.7s ;
+      }
+      .rows li:hover{
+        color: tomato;
+      }
+      .rows a{
+        transition: 0.7s ;
+      }
+      .rows a:hover{
+        color: tomato;
+      }
+      .left{
+        padding: 15px 25px;
+        width: 68% ;
+      }
+
+      .eighth-part{
+        display: flex;
+        flex-direction:column;
+        margin-left:-34px;
+        margin-bottom: 150px;
+        background-color: black;
+        padding:150px 15px;
+      }
+      .happy{
+        display: flex;
+        width:48%;
+        background-color: #ffffff;
+        margin: 15px;
+        padding: 30px;
+        flex-direction:column; 
+        line-height:30px;
+        border-radius: 5px;
+      }
+      .nineth-part{
+        display: flex;
+        flex-direction:row;
+        line-height: 60px;
+      }
+      .text-and-progress{
+        width: 49%;
+      }
+      .progress{
+        background-color: rgb(255, 67, 34);
+        height: 5px;
+        border-radius: 5px;
+      }
+      .tenth-part{
+        display: flex;
+        flex-direction:row;
+        background-color:#fd4a18;
+        padding: 50px;
+        justify-content: center;
+        align-items: center;
+        color: aliceblue;
+        border-radius: 5px;
+        margin: 100px 0px;
+      }
+      .boxes{
+        margin: 0px 60px;
+        text-align: center;
+      }
+      .eleventh-part{
+        margin: 100px 0px;
+      }
+      .Posts{
+        height: 250px;
+        width: 400px;
+        border-radius: 5px;
+        margin: 15px;
+        transition: 2s;
+      }
+
+      .jan{
+        color: white;
+        display: inline-block;
+        font-weight: 750;
+        font-size: 25px;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: #fc4423;
+      }
+      .twelth-part{
+        display: flex;
+        position:relative;
+        bottom:-50px;
+        background-color: white;
+        border-radius: 5px;
+        margin-right: 35px;
+      }
+      .Posts:hover{
+        transform:translate(3px,3px);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <header>
+      <nav id="navbar">
+        <!-- image -->
+        <div id="techtrix-div">
+          <img src="./images/Techtrick.png" alt="" id="techtrix" />
+        </div>
+        <!-- image-end -->
+
+        <!-- tabs -->
+        <div class="tabs">
+          <ul>
+            <li class="tab-items">
+              <a href="">
+                Home
+                <select name="" id="arrow"></select>
+              </a>
+            </li>
+            <li class="tab-items">
+              <a href="">Services<select name="" id="arrow"></select> </a>
+            </li>
+            <li class="tab-items">
+              <a href=""
+                >Pages
+                <select name="" id="arrow"></select>
+              </a>
+            </li>
+            <li class="tab-items">
+              <a href=""
+                >Portfolio
+                <select name="" id="arrow"></select>
+              </a>
+            </li>
+            <li class="tab-items">
+              <a href="">Blog<select name="" id="arrow"></select></a>
+            </li>
+            <li class="tab-items"><a href="">Contact Us </a></li>
+          </ul>
+        </div>
+        <!-- tabs-end -->
+
+        <!-- call -->
+        <div id="call">
+          <a href="">
+            <img src="images/contact-icon.png" alt="" id="cont-icon" />
+          </a>
+        </div>
+        <div id="call-text">
+          <a href="">
+            <span id="call-num">+1-800-456-478-24</span>
+            <span style="color: tomato; font-size: 15px">Make A Call</span>
+          </a>
+        </div>
+        <!-- call-end -->
+
+        <!-- free-quote-button -->
+        <div class="button" id="free-quote"><a href="">Free Quote</a></div>
+      </nav>
+    </header>
+    <!-- navbar-end -->
+
+    <!-- banner -->
+    <div id="banner">
+      <!-- first-content -->
+      <div id="banner-first-content ">
+        <h4 style="padding: 60px" class="heading txt-clr-t">
+          #SECURE AND IT SERVICES
+        </h4>
+        <h1
+          class="heading txt-clr-w"
+          style="font-size: 8rem; padding: 70px; padding-top: 0px"
+        >
+          DIGITAL PERFECTION
+        </h1>
+        <button class="read-and-contact button" id="btn-1">Read more</button>
+        <button
+          class="read-and-contact button"
+          id="btn-2"
+          style="background-color: rgb(255, 255, 255)"
+        >
+          Contact Us
+        </button>
+      </div>
+      <!-- first-content-end -->
+    </div>
+    <!-- banner-end-->
+    <!-- section -->
+    <section>
+      <div class="container dis-flex" style="flex-direction: column">
+         <!-- first part -->
+         <div class="1st-part">
+          <div class="dis-flex">
+            <div style="width: 840px">
+              <h4 class="heading txt-clr-t">
+                # WE HAVE MORE THAN IT SOLUTIONS.
+              </h4>
+              <h1 class="heading fsize-3">
+                We Deliver Solution With The Goal Of Trusting Relationships
+              </h1>
+              <p class="txt-clr-g">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+
+              <div class="dis-flex">
+                <div class="explore">
+                  <span class="txt-clr-t">EXPLORE THE WORLD </span>
+                  <h1>App Development</h1>
+                  <hr class="margin-40" />
+                  <p class="txt-clr-g margin-40">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content.
+                  </p>
+                  <span
+                    ><a href="" class="txt-clr-t" id="read">Read More</a>
+                  </span>
+                </div>
+                <div class="explore" style="margin-right: 5px">
+                  <span class="txt-clr-t">EXPLORE THE SERVICE </span>
+                  <h1>Web Development</h1>
+                  <hr class="margin-top" style="margin: 40px 0px" />
+                  <p class="txt-clr-g margin-40">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content.
+                  </p>
+                  <span
+                    ><a href="" class="txt-clr-t" id="read">Read More</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- Best agency business -->
+            <div class="dis-flex second-box" style="flex-direction: column">
+              <h1 class="heading fsize-3">Best Agency Business</h1>
+              <ul style="list-style: none">
+                <li class="list-item">Web Development</li>
+                <li class="list-item">Mobile Development</li>
+                <li class="list-item">UX/UI Design</li>
+                <li class="list-item">It Consultancy</li>
+                <li class="list-item">Product Engineering</li>
+                <li class="list-item">Business Security</li>
+                <li class="list-item">Managed IT Services</li>
+              </ul>
+            </div>
+            <div class="txt-clr-w bottom bg-color-t">25+ YEAR EXPERIENCE</div>
+            <!-- Best agency business end-->
+          </div>
+         </div>
+         <!-- first part end  -->
+         <!-- second part -->
+         <div class="2nd-part dis-flex" style="margin-top: 180px; height: 650px;">
+          <div class="image ">
+            <img src="./images/1.jpg" alt="" />
+            <img src="./images/2.jpg" alt="" id="image-2" />
+            <div class="bg-color-t box txt-clr-w">
+              <div class="fsize-3">150+</div>
+              PROJECTS COMPLETE
+            </div>
+          </div>
+          <div class="text">
+              <div class="dis-flex" style="width: 630px;">
+                <div style="width: 860px">
+                  <h4 class="heading txt-clr-t">
+                    # CREATIVE OUR IT TECHNOLOGY
+                  </h4>
+                  <h1 class="heading fsize-3">
+                    We Offer High Quality IT Agency Services
+                  </h1>
+                  <p class="txt-clr-g">
+                    There are many variations of passages of Lorem Ipsum available, but majority have suffered alteration in some form, by injected humour variations of the suffered alteration in some form
+                  </p>
+                  <div class="dis-flex">
+                    <div class="options margin-40">
+                      <h1 class="margin-40">
+                        IT Management</h1>
+                        <p class="txt-clr-g">Lorem Ipsum has been the industry’s text ever since the when.</p>
+                      <h1>
+                      </div>
+                      <div class="options margin-40" >
+                        <h1 class="margin-40">IT Consultancy</h1>
+                        <p class="txt-clr-g">Lorem Ipsum has been the industry’s text ever since the when.</p>
+                        </div>
+                  </div>
+                      <div class="dis-flex">
+                          <img src="images/Jhon-Doerr.jpg" alt="" class="margin-40 " style="border-radius: 40px;">
+                          <div class="margin-40"style="margin-left:45px" >
+                    <h1 class="dis-block"><a href="" class="txt-clr-b text-hover" style="transition: all 0.5s;"> Jhon-Doerr</a></h1>
+                    <span class="txt-clr-t dis-block">CEO OF PEACEFUL THEME</span>
+                  </div>
+                  <div class="button margin-40" style="height:20px ;margin-left: 45px; color: white; ">
+                   <a href=""> Read More</a>
+                  </div>
+                    </div>
+              </div>
+              </div>
+          </div>
+         </div>
+         <!-- second part end -->
+
+
+         <!-- third part -->
+         <div class="third-part dis-flex" >
+            <h4 class="heading txt-clr-t" style="text-align: center;">
+              # OUR GROWTH BUSINESS
+            </h4>
+            <h1 class="heading fsize-3 txt-clr-w" style="text-align: center; padding: 0px 250px;">
+              Intelligence And Collaboration IT Company Service.
+            </h1>
+            <div class="dis-flex">
+              <div class="icon"><h1>Cloud DevOps</h1><p class="txt-clr-g">There are many variaons of passages Lorem</p></div>
+              <div class="icon"><h1>Data Center</h1><p class="txt-clr-g">There are many variaons of passages Lorem</p></div>
+              <div class="icon"><h1>Product Design</h1><p class="txt-clr-g">There are many variaons of passages Lorem</p></div>
+              <div class="icon"><h1>Digital Services</h1><p class="txt-clr-g">There are many variaons of passages Lorem</p></div>
+              </div>
+          </div>
+         <!-- third part end -->
+
+
+          <!-- fourth part -->
+          <div class="fourth-part">
+            <div class="text-2">
+            <h4 class="heading ">
+              # OUR BENEFITS
+            </h4>
+            <h1 class="heading fsize-3 " >
+              Solve Business Challenges With IT
+            </h1>
+            <p style="line-height: 30px;">There are many variations of passages of Lorem Ipsum available, but majority have suffered alteration in some form, by injected humour</p>
+            <div class="items">
+              <div class="list-items">There are many variations</div>
+              <div class="list-items">It is a long established that</div>
+              <div class="list-items">Contrary to popular belief</div>
+              <div class="list-items">The standard chunk of Lorem</div>
+              <div class="list-items">Sed scelerisque massa quis</div>
+              <div class="list-items">Fusce venenatis orci quis</div>
+            </div>
+            <p>Call To Book Appoinment <b> 987 654 3210</b></p>
+            <div class="button-2">Check Services</div>
+            </div>
+            <div>
+              <img src="./images/Jhon-Doerr-2.jpg" alt="" class="image-2">
+            </div>
+          </div>
+          <!-- fourth part end -->
+
+
+          <!-- fifth part -->
+          <div class="fifth-part">
+            <h4 class="heading  txt-clr-t "style="text-align:center;">
+              # OUR VALUES AND GOALS
+            </h4>
+            <h1 class="heading fsize-3" style="text-align: center;">
+              Our Work Process
+            </h1>
+            <div class="dis-flex">
+              <div class="process"><div class="pc-no">1</div><h1>Choose A Service</h1><p class="txt-clr-g ">There are many variations of passages of Lorem</p></div>
+              <img src="./images/arrow-1.png" alt=""style="height:40px;position: relative;top:100px" >
+              <div class="process"><div class="pc-no">2</div><h1>Request A Meeting</h1><p class="txt-clr-g">There are many variations of passages of Lorem</p></div>
+              <img src="./images/arrow-2.png" alt=""style="height:40px;position: relative;top:100px">
+              <div class="process"><div class="pc-no">3</div><h1>Start Planing</h1><p class="txt-clr-g">There are many variations of passages of Lorem</p></div>
+              <img src="./images/arrow-1.png" alt=""style="height:40px;position: relative;top:100px ">  
+              <div class="process"><div class="pc-no">4</div><h1>Lets Make It Happen</h1><p class="txt-clr-g">There are many variations of passages of Lorem</p></div>
+            </div>
+          </div>
+          <!-- fifth part end-->
+
+
+          <!-- sixth part -->
+          <div class="sixth-part">
+            <h4 class="heading  txt-clr-t "style="text-align:center;">
+              # EXPERT TEAM
+            </h4>
+            <h1 class="heading fsize-3" style="text-align: center;">
+              Our Team Members</h1>
+              <div class="images">
+                <div>
+                  <img src="./images/member-1.jpg" alt="" class="team-members">
+                <h1 style="text-align: center;">Alex Jhon Martin</h1>
+                <span style="text-align: center; color: tomato;display:block;">Web Developer</span>
+                </div>
+                <div>
+                  <img src="./images/member-2.jpg" alt="" class="team-members">
+                <h1 style="text-align: center;">Alex Jhon Martin</h1>
+                <span style="text-align: center; color: tomato;display:block;">Web Developer</span>
+                </div>
+                <div>
+                  <img src="./images/member-3.jpg" alt="" class="team-members">
+                <h1 style="text-align: center;">Alex Jhon Martin</h1>
+                <span style="text-align: center; color: tomato;display:block;">Web Developer</span>
+                </div>
+            </div>
+          </div>
+          <!-- sixth part end-->
+
+
+
+          <!-- seventh part -->
+          <div class="seventh-part">
+            <h4 class="heading  txt-clr-t "style="text-align:center;">
+              # AWARD NOMINEES
+            </h4>
+            <h1 class="heading fsize-3" style="text-align: center;padding:0px 250px ;">
+              Business And Industry Awards Programs</h1>
+              <div class="dis-flex"style="margin:34px;">
+              <div style="margin: 100px 50px;text-align: center;">
+                <img src="./images/3.png" alt="">
+                <span style="font-weight: bold;"> Top Developer </span>
+              </div>
+              <div style="margin: 100px 50px;text-align: center;">
+                <img src="./images/4.png" alt="">
+                <span style="font-weight: bold;"> Clutch</span>
+              </div>
+              <div style="margin: 100px 50px;text-align: center;">
+                <img src="./images/5.png" alt="">
+                <span style="font-weight: bold;"> Upcity Marketplace</span>
+              </div>
+              <div style="margin: 100px 50px;text-align: center;">
+                <img src="./images/3.png" alt="">
+                <span style="font-weight: bold;"> Development</span>
+              </div>
+              <div style="margin: 100px 50px;text-align: center;">
+                <img src="./images/4.png" alt="">
+                <span style="font-weight: bold;"> Top Developer </span>
+              </div>
+              </div>
+            </div>
+          <!-- seventh part end-->
+
+
+
+
+          <!-- eighth part -->
+            <div class="eighth-part">
+              <!-- text -->
+              <div >
+                <h4 class="heading txt-clr-w"style="text-align:center;">
+                  # OUR TESTIMONIAL
+              </h4>
+              <h1 class="heading fsize-3 txt-clr-w" style="text-align: center;padding:0px 250px ;">
+                Cleints Happy Our IT Solutions.</h1>
+              </div>
+              <!-- box -->
+              <div class="dis-flex">
+                <div class="happy">
+                  <!-- text -->
+                  <div class="dis-flex"style="flex-direction:row">
+                    <img src="images/Jhon.jpg" alt=""style="height:100px; width=100px;border-radius:5px;">
+                    <div style="padding:13px 10px; line-height: 35px;">
+                      <h1> Jhon Martin</h1>
+                      <span class="txt-clr-t">SOFTWARE DEVELOPER</span>
+                    </div>
+                  </div>
+                    <p class="txt-clr-g"style="margin:20px 0px;">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look .</p>
+                  </div>
+                <div class="happy">
+                  <!-- text -->
+                  <div class="dis-flex"style="flex-direction:row">
+                    <img src="images/Jhon-Martin.jpg" alt=""style="height:100px; width=100px;border-radius:5px;">
+                    <div style="padding:13px 10px; line-height: 35px;">
+                      <h1>Alex Jhon Martin</h1>
+                      <span class="txt-clr-t">ANDROID DEVELOPER</span>
+                    </div>
+                  </div>
+                    <p class="txt-clr-g"style="margin:20px 0px;">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look .</p>
+                  </div>
+                  
+                  
+                </div>
+              </div>
+              <!-- eighth part end -->
+              
+              
+              
+              <!-- nineth part -->
+              <div class="nineth-part">
+                <!-- text -->
+                <div class="text-and-progress">
+                  <h4 class="heading txt-clr-t"># BUSINESS EVENT VALUE</h4>
+                  <h1 class="heading fsize-3 " style="margin-bottom: 15px;">How We Work For Your Business And Startup</h1>
+                  <p class="txt-clr-g"style="line-height:35px;">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or words which don’t look even slightly believable If you going to used Lorem Ipsum,
+                  </p>
+                  <div class="button margin-40" style="height:20px ;margin: 45px 0px; color: white;line-height: 25px">
+                    <a href=""> Read More</a>
+                  </div>
+                </div>
+                <!-- progress bar -->
+                <div class="text-and-progress"style="margin-top:40px">
+                  <div style="margin: 15px 0px;">
+                    <span style="font-size: 20px;font-weight:700;">Managed It Services</span>
+                    <span style="font-size: 20px;color: #fd3e1d; font-weight: bold;float: right;">85%</span>
+                    <div class="progress"style="width:85%;"></div>
+                  </div>
+                  <div style="margin: 15px 0px;">
+                    <span style="font-size: 20px;font-weight:700;">It Support & helpdesk</span>
+                    <span style="font-size: 20px;color: #fc4423; font-weight: bold;float: right;">92%</span>
+                    <div class="progress"style="width:92%;"></div>
+                  </div>
+                  <div style="margin: 15px 0px;"> 
+                    <span style="font-size: 20px;font-weight:700;">We Have an It Department</span>
+                    <span style="font-size: 20px;color: #fc4423; font-weight: bold;float: right;">80%</span>
+                    <div class="progress"style="width:80%;"></div>
+                  </div>
+                  <div style="margin: 15px 0px;">
+                    <span style="font-size: 20px;font-weight:700;">Augmented Reality</span>
+                    <span style="font-size: 20px;color: #fc4423; font-weight: bold;float: right;">85%</span>
+                    <div class="progress"style="width:85%"></div>
+                  </div>
+                </div>
+              </div>
+          <!-- nineth part end -->
+
+
+
+
+          <!-- tenth part -->
+              <div class="tenth-part">
+                <div class="boxes">
+                  <span style="font-size: 70px;display:block;">80+</span>
+                  <span style="font-weight: bold;">ACCOUNT NUMBER</span>
+                </div>
+                <div class="boxes">
+                  <span style="font-size: 70px;display:block;">128+</span>
+                  <span style="font-weight: bold;">HAPPY CUSTOMERS</span>
+                </div>
+                <div class="boxes">
+                  <span style="font-size: 70px;display:block;">350+</span>
+                  <span style="font-weight: bold;">FINISHED PROJECTS</span>
+                </div>
+                <div class="boxes">
+                  <span style="font-size: 70px;display:block;">130+</span>
+                  <span style="font-weight: bold;">WIN AWARDS</span>
+                </div>
+              </div>
+          <!-- tenth part end -->
+          
+          
+          
+
+          <!-- eleventh part -->
+          <div class="eleventh-part">
+            <h4 class="heading  txt-clr-t "style="text-align:center;">
+              # OUR LATEST NEWS
+            </h4>
+            <h1 class="heading fsize-3" style="text-align: center;padding:0px 250px ;">
+              Latest Blog Posts</h1>
+              <!-- images -->
+              <div style="display: flex;">
+                <div><img src="./images/1-1.jpg" alt=""class="Posts">
+                  <span class="txt-clr-g" style="margin-left: 40px;">ADMIN<span  style="margin: 5px 20px;">CYBER SECURITY</span></span>
+                  <h1 style="font-size: 35px; padding-left: 34px;font-weight: 600;">App promotes sales & profits In It Solutions</h1>
+                  <div class="jan"style="position: relative;left:320px;bottom:410px"><span> 09 </span><h5>JAN</h5></div>
+                  <div class="button " style="height:20px ;margin: 45px 0px; color: white;line-height: 25px;margin-left: -50px;">
+                    <a href=""> Read More</a>
+                  </div>
+                </div>
+                <div><img src="./images/1-2.jpg" alt=""class="Posts">
+                  <span class="txt-clr-g" style="margin-left: 40px;">ADMIN<span  style="margin: 5px 20px;">CLOUD COMPUTING</span></span>
+                  <h1 style="font-size: 35px; padding-left: 34px;font-weight: 600;">In Depth Industry & Ecosystem Analysis</h1>
+                  <div class="jan"style="position: relative;left:320px;bottom:410px"><span> 26 </span><h5>JAN</h5></div>
+                  <div class="button " style="height:20px ;margin: 45px 0px; color: white;line-height: 25px;margin-left: -50px;">
+                    <a href=""> Read More</a>
+                  </div>
+                </div>
+                <div><img src="./images/2.jpg" alt=""class="Posts">
+                  <span class="txt-clr-g" style="margin-left: 40px;">ADMIN<span  style="margin: 5px 20px;">EVENTS</span></span>
+                  <h1 style="font-size: 35px; padding-left: 34px;font-weight: 600;">New Remote Workers Visible To Security ?</h1>
+                  <div class="jan"style="position: relative;left:320px;bottom:410px"><span> 15   </span><h5>JAN</h5></div>
+                  <div class="button " style="height:20px ;margin: 45px 0px; color: white;line-height: 25px;margin-left: -50px;">
+                    <a href=""> Read More</a>
+                  </div>
+                </div>
+              </div>
+              <!-- images end -->
+          </div>
+          <!-- eleventh part end -->
+
+
+          <!-- twelth part -->
+          <div class="twelth-part">
+            <div style="padding:30px 45px;margin: 0px 60px;">
+              <h1>Address</h1>
+              <span class="txt-clr-g">457,Gourandai Los Angeles,USA</span>
+            </div>
+            <div style="padding:30px 45px;margin: 0px 60px;">
+              <h1>Call Us On</h1>
+              <span class="txt-clr-g">+1-800-456-478-24</span>
+            </div>
+            <div style="padding:30px 45px;margin: 0px 60px;">
+              <h1>Email Us</h1>
+              <span class="txt-clr-g">peacefulqode@gmail.com</span>
+            </div>
+          </div>
+          <!-- twelth part end -->
+
+
+
+
+
+        </div>
+    </section>  
+    <!-- section-end -->
+    
+    
+    
+    <!-- footer start -->
+    <footer>
+      <div class="footer">
+        <div class="rows "style="line-height:30px">
+          <img src="images/Techtrick-2.png" alt=""id="techtrick-2"style="margin-top:-25px">
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
+          </p>
+        </div>
+        <div class="rows ">
+          <h1 class="txt-clr-w">Our Services</h1>
+          <ul style="padding: 0px 20px;">
+            <a href=""><li class="footer-li">Software Development</li></a>
+            <a href=""><li class="footer-li">Web Development</li></a>
+            <a href=""><li class="footer-li">Mobile Development</li></a>
+            <a href=""><li class="footer-li">App Development</li></a>
+            <a href=""><li class="footer-li">QA Testing</li></a>
+          </ul>
+        </div>
+        <div class="rows ">
+          <h1 class="txt-clr-w">Useful Link</h1>
+          <ul style="padding: 0px 20px;">
+            <a href=""><li class="footer-li">Fact Search Engine</li></a>
+            <a href=""><li class="footer-li">Learn and Code</li></a>
+            <a href=""><li class="footer-li">Video Sharing Website</li></a>
+            <a href=""><li class="footer-li">File & URL Scanner</li></a>
+            <a href=""><li class="footer-li">Online Software Package </li></a>
+          </ul>
+        </div>
+        <div class="rows ">
+          <h1 class="txt-clr-w">Recent Post</h1>
+          <div class="dis-flex" style="margin:30px 0px;">
+            <a href=""><img src="images/1-1.jpg" alt="" style="margin:10px;border-radius: 5px;height: 70px;width: 100px;"></a>
+            <a href=""><p style="line-height: 28px; ">App Promotes Sales & Profits In It Solutions <span class="txt-clr-t">JANUARY 26,2021</span> </p></a>
+          </div>
+          <div class="dis-flex" style="margin:30px 0px;">
+            <a href=""><img src="images/1-2.jpg" alt="" style="margin:10px;border-radius: 5px;height: 70px;width: 100px;"></a>
+            <a href=""><p style="line-height: 28px; ">In Depth Industry & Ecosystem Analysis <span class="txt-clr-t">JANUARY 26,2021</span> </p></a>
+          </div>
+        </div>
+        </div>
+      </div>
+      <!-- footer bottom -->
+      <div class="footer-bottom">
+        <div class="left">
+          <p> Copyright 2022 Techtrix All Rights Reserved.</p>
+        </div>
+       <div class="right">
+         <ul>
+           <li><a href="">Career</a></li>
+           <li><a href="">Term Of Use</a></li>
+           <li><a href="">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- footer bottom end-->
+    </footer>
+    <!-- footer end -->
+
+
+
+
+  </body>
+</html>
